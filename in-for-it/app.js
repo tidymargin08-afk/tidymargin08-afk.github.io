@@ -81,6 +81,7 @@ const CONFIG = {
     return (
       '<input type="hidden" name="_subject" value="' + escapeHtml(subject) + '" />' +
       '<input type="hidden" name="_template" value="table" />' +
+      '<input type="hidden" name="_captcha" value="false" />' +
       '<input type="hidden" name="product" value="' + escapeHtml(product) + '" />' +
       '<input type="hidden" name="_next" value="' + escapeHtml(thankYouUrl()) + '" />' +
       '<label class="hp" aria-hidden="true">Leave blank<input type="text" name="_honey" id="honey" tabindex="-1" autocomplete="off" /></label>'
@@ -212,7 +213,7 @@ const CONFIG = {
       '<form id="interest-form-el" novalidate' +
       formAction +
       ">" +
-      formMetaFields("In For It join request", "In For It") +
+      formMetaFields("New In For It sign-up", "In For It") +
       '<label for="name">Name</label><input id="name" name="name" type="text" required maxlength="80" />' +
       '<label for="email">Email</label><input id="email" name="email" type="email" required />' +
       '<label for="neighbourhood">Neighbourhood</label><input id="neighbourhood" name="neighbourhood" type="text" required maxlength="80" placeholder="Where in Toronto you are based" />' +

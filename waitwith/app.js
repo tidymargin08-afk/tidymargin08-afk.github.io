@@ -58,6 +58,7 @@ const CONFIG = {
     return (
       '<input type="hidden" name="_subject" value="' + escapeHtml(subject) + '" />' +
       '<input type="hidden" name="_template" value="table" />' +
+      '<input type="hidden" name="_captcha" value="false" />' +
       '<input type="hidden" name="product" value="' + escapeHtml(product) + '" />' +
       '<input type="hidden" name="_next" value="' + escapeHtml(thankYouUrl()) + '" />' +
       '<label class="hp" aria-hidden="true">Leave blank<input type="text" name="_honey" id="honey" tabindex="-1" autocomplete="off" /></label>'
@@ -108,7 +109,7 @@ const CONFIG = {
       '<form id="waitlist-form-el" novalidate' +
       formAction +
       ">" +
-      formMetaFields("WaitWith waitlist", "WaitWith") +
+      formMetaFields("New WaitWith sign-up", "WaitWith") +
       '<label for="name">Name</label><input id="name" name="name" type="text" required maxlength="80" />' +
       '<label for="email">Email</label><input id="email" name="email" type="email" required />' +
       '<label for="area">GTA area</label><select id="area" name="area" required><option value="">Select an area</option>' +
